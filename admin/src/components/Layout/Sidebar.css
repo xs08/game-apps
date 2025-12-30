@@ -1,0 +1,31 @@
+.admin-sidebar {
+  background: #001529;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.admin-sidebar .ant-menu {
+  background: #001529;
+  border-right: none;
+}
+
+.admin-sidebar .ant-menu-item,
+.admin-sidebar .ant-menu-submenu-title {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.admin-sidebar .ant-menu-item-selected,
+.admin-sidebar .ant-menu-item:hover,
+.admin-sidebar .ant-menu-submenu-title:hover {
+  background: #1890ff;
+  color: #fff;
+}
+
+.admin-sidebar .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #1890ff;
+}
+
