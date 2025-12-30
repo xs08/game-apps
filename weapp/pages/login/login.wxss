@@ -1,0 +1,113 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 600rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 20rpx 60rpx rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  text-align: center;
+  color: #999;
+  margin-bottom: 60rpx;
+}
+
+.login-tabs {
+  display: flex;
+  border-bottom: 2rpx solid #eee;
+  margin-bottom: 40rpx;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  color: #999;
+  position: relative;
+}
+
+.tab.active {
+  color: #3cc51f;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60rpx;
+  height: 4rpx;
+  background: #3cc51f;
+  border-radius: 2rpx;
+}
+
+.login-form {
+  margin-top: 40rpx;
+}
+
+.form-item {
+  margin-bottom: 30rpx;
+}
+
+.input {
+  width: 100%;
+  padding: 24rpx;
+  border: 2rpx solid #eee;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #3cc51f;
+}
+
+.btn {
+  width: 100%;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+
+.wechat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #07c160;
+}
+
+.wechat-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #3cc51f;
+}
+

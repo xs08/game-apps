@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="header">
+    <view class="title">双人解谜</view>
+    <view class="subtitle">情侣协作闯关游戏</view>
+  </view>
+
+  <view class="content">
+    <view class="welcome" wx:if="{{isAuthenticated && userInfo}}">
+      <text>欢迎回来，{{userInfo.nickname || userInfo.username}}</text>
+    </view>
+    <view class="welcome" wx:else>
+      <text>欢迎来到双人解谜世界</text>
+    </view>
+
+    <view class="menu">
+      <view class="menu-item" bindtap="startGame">
+        <image class="menu-icon" src="/assets/icons/game.png" />
+        <text class="menu-text">开始游戏</text>
+      </view>
+      <view class="menu-item" bindtap="viewLevels">
+        <image class="menu-icon" src="/assets/icons/levels.png" />
+        <text class="menu-text">关卡选择</text>
+      </view>
+      <view class="menu-item" bindtap="goToProfile">
+        <image class="menu-icon" src="/assets/icons/profile.png" />
+        <text class="menu-text">个人中心</text>
+      </view>
+    </view>
+  </view>
+</view>
+
